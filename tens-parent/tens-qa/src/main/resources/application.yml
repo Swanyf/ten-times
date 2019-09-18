@@ -1,0 +1,24 @@
+server: 
+  port: 9003
+spring: 
+  application:  
+    name: tens-qa #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.110.132:3306/tensquare_qa?characterEncoding=UTF8
+    username: root
+    password: rootswan
+  jpa: 
+    database: MySQL
+    show-sql: true
+
+eureka:
+  client:
+    service‐url:
+      defaultZone: http://localhost:7000/eureka   # 指定注册中心
+    instance:
+      prefer‐ip‐address: true   # 模块之间可以跨域访问
+
+feign:
+  hystrix:
+    enabled: true

@@ -1,0 +1,12 @@
+spring:
+  rabbitmq:
+    host: 192.168.110.132
+server:
+  port: 8010
+
+aliyun:
+  sms:
+    accessKeyId: LTAI4Fq1UznbN9bCji7wTCUg
+    accessKeySecret: 0DclrNpW3oYxobN3TQ7UwDU1otHwZJ
+    template_code: SMS_174027711
+    sign_name: 赛诚短信验证服务
